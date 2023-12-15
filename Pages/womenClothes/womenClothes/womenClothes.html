@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="womenClothes.css">
+    <title>EONIA WOMEN</title>
+    <link rel="icon" href="../../../Images/Logo/INFINITY LOGO.png">
+    <style>
+    #scrollUp { 
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+        opacity: 0.5;
+      }
+
+      #scrollUp svg {
+        fill: black;
+      }
+
+      #scrollUp:hover {
+        opacity: 1;
+      }
+
+      @media screen and (min-width: 960px) {
+        #scrollUp {
+          right: 3rem;
+        }
+      }
+
+      #secondButton {
+        box-shadow: 3px 4px 10px 1px #bdb8b8;
+      }
+    </style>
+</head>
+<body>
+    <div class="iconsItems" style=" position: fixed; top: 0px; z-index: 99;">
+        <div class="logoEonia">
+          <div class="logo">
+            <a href="#">
+              <img src="../../../Images/Logo/INFINITY LOGO.png" alt="" height="60" width="60" />
+            </a>
+          </div>
+        </div>
+
+        <ul class="nav-menuu">
+          <li class="nav-itemm">
+            <a class="nav-linkk" href="#">Home</a>
+          </li>
+          <li class="nav-itemm">
+            <a class="nav-linkk" href="#contact_us">Contact</a>
+          </li>
+         <li class="nav-itemm">
+          <a class="nav-linkk" href="#about_us">About</a>
+         </li>
+          <!-- <li class="nav-itemm">
+            <a class="nav-linkk" href="#sellers">sellers</a>
+          </li>
+          <li class="nav-itemm">
+            <a class="nav-linkk" href="#brands_dealing">Brands</a>
+          </li> -->
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+
+      <div class="Container" style="gap: 50px;">
+        <div class="Card">
+            <div class="Photo">
+                <img src="../../../Images/Products/'I HATE IT HERE'.png" alt="'I HATE IT HERE' TANK TOP">
+                </div>
+                <div class="Allcarditems"> <div class="ProductDescription">
+                    <div><h3>'I HATE IT HERE' TANK TOP</h3></div>
+                    <div class="productprice">
+                    <s style="color: red;">LE 350 EGP</s>
+                    <Span>LE 250 EGP</Span>
+                </div>
+                </div>
+                <div style="display: flex;justify-content: center; align-items: center;">
+                  <a href="../../../Pages/singleProduct/Women/Product1.html" style="text-decoration: none;">
+                    <button class="BuyNowButton" style="cursor: pointer;">Buy now!</button>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="Card">
+            <div class="Photo">
+                <img src="../../../Images/Products/'EONIA BABY TEE'.png" alt="'EONIA' BABY TEE">
+                </div>
+                <div class="Allcarditems"> <div class="ProductDescription">
+                    <div><h3>'EONIA' BABY TEE</h3></div>
+                    <div class="productprice">
+                    <s style="color: red;">LE 350 EGP</s>
+                    <Span>LE 250 EGP</Span>
+                </div>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+
+                  <a href="../../singleProduct/Women/Product2.html" style="text-decoration: none;">
+                    <button class="BuyNowButton" style="cursor: pointer;">Buy now!</button>
+                  </a>
+                </div>
+            </div>
+        
+      </div>
+
+      <div class="line" style="margin: 25px 0 25px 0;"></div>
+
+      <div id="about_us" class="aboutUs">
+        <div class="aboutUsTop">
+          <div class="subscribe">
+            <div style="display: flex; align-items: center; margin-right: 10px">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                />
+              </svg>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <p style="margin-bottom: 0; font-weight: bold">
+                Reach us through our e-mail
+              </p>
+              <p id="purchases">
+                 Register now and get 10% discount on your purchases!</p>
+              <p id="noPurchases">Register to get 10% discount</p>
+            </div>
+          </div>
+          <button class="subscribeButton">Register now!</button>
+          <div class="unsubscribe">
+            <p
+              style="
+                font-weight: 600;
+                margin-bottom: 3px;
+                display: flex;
+                justify-content: flex-start;
+              "
+            >
+              Delete account at any moment
+            </p>
+            <form
+              method="get"
+              target="_blank"
+              style="
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                justify-content: flex-start;
+                min-width: 100%;
+              "
+            >
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder=" Enter your email address "
+                style="border: 2px solid black"
+              />
+              <input
+                type="submit"
+                value="Apply"
+                style="
+                  background-color: black;
+                  justify-content: center;
+                  align-items: center;
+                  color: white;
+                  border: 1px solid white;
+                  border-radius: 10px;
+                  font-weight: 600;
+                  min-width: 60px;
+                "
+              />
+            </form>
+          </div>
+        </div>
+        <div class="aboutUsBottom">
+          <div class="aboutEgy">
+            <p style="font-weight: bold; margin-bottom: 0">About EONIA</p>
+            <p>
+              EONIA AIMS TO CONNECT PEOPLE THROUGH THE ART OF FASHION, CREATING A BRAND THAT APPRECIATES CREATIVITY AND SELF-EXPRESSION. WITH A FOCUS ON ETERNITY, EACH PIECE IS CREATED TO BE TIMELESS AND EVERLASTING REPRESENTING THE BRAND'S COMMITMENT TO QUALITY AND SUSTAINABILITY. DISCOVER THE MAGIC OF EONIA, WHERE FASHION MEETS ART AND THE POSSIBILITIES ARE ENDLESS.
+            </p>
+          </div>
+          <div class="importantLinks">
+            <p style="font-weight: bold; margin-bottom: 0">Important links!</p>
+            <ul>
+              <a href=""><li>Who are we?</li></a>
+              <a href=""><li>Privacy Policy</li></a>
+              <a href=""><li>Terms and Conditions</li></a>
+              <a href=""><li>Customer Support</li></a>
+            </ul>
+          </div>
+          <div class="contactWithUs">
+            <p style="font-weight: bold; margin-bottom: 0">Contact with us</p>
+            <ul>
+              <li>
+                WhatsApp: <br />
+                +20 01121582715
+              </li>
+              <li>
+                Mobile: <br />
+                +20 01121582715
+              </li>
+              <li>
+                Address: <br />
+                Zamalek - Cairo - Egypt
+              </li>
+              <li>
+                Email: <br />
+                3adly1710@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="follow">
+        <div>
+          <span class="background">
+            <span class="social-media-buttons">
+              <a href="https://instagram.com/ahmedadly17?igshid=MzMyNGUyNmU2YQ==">
+                    <span class="social-media-button" id="instagram_id">
+                    <img
+                        alt="Instagram"
+                        src="../../../Images/Social Media/instagram.svg"
+                    />
+                  </span>
+                  </a>
+                 <a href="https://twitter.com/3adly17?t=UbZ6ZExXFtu1SmEWr_-Gmg&s=09">
+                    <span class="social-media-button" id="twitter_id">
+                    <img
+                        alt="Twitter"
+                        src="../../../Images/Social Media/twitter.svg"
+                    />
+                  </span>
+                  </a>
+                  <a href="https://www.facebook.com/ahmedadly.1710?mibextid=ZbWKwL">
+                <span class="social-media-button" id="facebook_id">
+                  <div class="facebook-icon">
+                      <img alt="Facebook" src="../../../Images/Social Media/facebook.svg" />
+                    </div>
+                  </span>
+                </a>
+                <a href="https://www.snapchat.com/add/adly1710?share_id=gsZzKNgzHw8&locale=en-GB">
+                  <span class="social-media-button" id="snapchat_id">
+                    <div class="snapchat-icon">
+                      <img
+                          alt="Snapchat"
+                          src="../../../Images/Social Media/snapchat.svg"
+                      />
+                    </div>
+                  </span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/ahmed-adly-73662828b">
+                    <span class="social-media-button" id="linkedin_id">
+                    <img
+                        alt="LinkedIn"
+                        src="../../../Images/Social Media/linkedin.svg"
+                    />
+                  </span>
+                  </a>
+            </span>
+        </span>
+        </div>
+      </div>
+
+      <!-- SCROLL UP BUTTON  -->
+      <a href="#" onclick="topFunction()" id="scrollUp" title="Go to top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 384 512"
+        >
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          />
+        </svg>
+      </a>
+      <!-- SCROLL UP BUTTON  -->
+      <script src="JS/all.min.js"></script>
+      <script src="JS/bootstrap.bundle.min.js"></script>
+      <script src="JS/index.js"></script>
+      <script src="JS/swiper-bundle.min.js"></script>
+      <script>
+        // for scroll up button
+        // Get the button:
+        let mybutton = document.getElementById("scrollUp");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        </script>
+    <script>
+
+
+
+        //Hamburger JS
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menuu");
+
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-linkk").forEach((n) =>
+          n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+          })
+        );
+      </script>
+
+
+    
+</body>
+</html>
