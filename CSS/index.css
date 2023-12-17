@@ -1,0 +1,561 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  :root{
+    --primary-color: #c6c3c3;
+    --second-color: #ffffff;
+    --black-color: #000000;
+  }
+   
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+
+    /* background-image: url("../images/Logo/EONIA\ LOGO.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+
+  .everything {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.wrapper_login , .wrapper_signup{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login_box , .signup_box{
+    position: relative;
+    width: 450px;
+    backdrop-filter: blur(25px);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: var(--second-color);
+}
+
+@media only screen and (min-width: 965px){
+
+    .login_box{
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+    
+    .signup_box{
+        margin-top: 7.5%;
+        margin-bottom: 7.5%;
+    }
+
+    .login_box{
+        margin-left: 20px;
+    }
+    
+    .signup_box{
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .login_box , .signup_box{
+        width: 370px;
+    }
+}
+@media only screen and (max-width: 426px){
+    .login_box , .signup_box{
+        width: 245px;
+    }
+}
+
+.login-header , .signup-header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+}
+
+.login-header span , .signup-header span{
+    font-size: 30px;
+    color: var(--black-color);
+}
+
+.login-header::before , .signup-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+}
+
+.login-header::after , .signup-header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+}
+
+.input-field:focus ~ .label, .input-field:valid .label{
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    color: var(--second-color);
+    padding: 0 10px;
+}
+
+.icon{
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+.input_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input-field{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    color: var(--second-color);
+    padding-inline: 20px 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    outline: none;
+}
+
+#user , #name , #address{
+    margin-bottom: 10px;
+}
+
+.label{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: .2s;
+}
+
+.input-submit{
+    width: 100%;
+    height: 50px;
+    background: #ececec;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-submit:hover{
+    background: var(--second-color);
+}
+
+@media only screen and (max-width: 564px){
+    .wrapper_login , .wrapper_signup{
+        padding: 20px;
+    }
+}
+
+.line{
+    text-align: center;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+
+
+
+  .contactMe{
+    height: auto;
+    padding-bottom: 25px;
+    }
+    .follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    }
+    :root {
+    --twitter: #1DA1F2;
+    --facebook: #4267B2;
+    --snapchat: #FFFC00;
+    --linkedin: #0A66C2;
+    }
+    
+    .background {
+    place-items: center;
+    height: 100vh;
+    }
+    
+    .social-media-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 15px;
+    }
+    
+    .social-media-button {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
+    }
+    
+    .social-media-button img{
+    width: 30px;
+    height: 30px;
+    }
+    
+    .social-media-button:hover {
+    outline-offset: 3px;
+    transition: all 0.3s;
+    }
+    
+    .social-media-button a {
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    min-height: 60%;
+    width: 60px;
+    }
+    
+    .social-media-button:hover img {
+    transform: scale(1.15);
+    }
+    
+    #instagram_id:hover{
+    background: radial-gradient(
+      circle at 30% 107%, #fdf497 0%, 
+      #fdf497 5%, #fd5949 45%,
+      #d6249f 60%,#285AEB 90%
+    );
+    }
+    #twitter_id:hover{
+    background-color: var(--twitter);
+    }
+    #facebook_id:hover{
+    background-color: var(--facebook);
+    }
+    #snapchat_id:hover{
+    background-color: var(--snapchat);
+    }
+    #linkedin_id:hover{
+    background-color: #0A66C2;
+    }
+    .facebook-icon {
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Set the background color for the circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .facebook-icon img {
+    width: 30px;
+    height: 30px;
+    }
+    .snapchat-icon {
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Set the background color for the circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .snapchat-icon img{
+    width: 30px;
+    height: 30px;
+    }
+
+
+
+  
+  #facebook:hover {
+    color: #4267B2;
+    cursor: pointer;
+    scale: 1.7;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #instagram:hover {
+    color: #bc1888;
+    cursor: pointer;
+    scale: 1.7;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #twitter:hover {
+    color: #1DA1F2;
+    cursor: pointer;
+    scale: 1.7;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #linkedin:hover {
+    color: #0A66C2;
+    cursor: pointer;
+    scale: 1.7;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #whatsapp:hover {
+    color: #25D366;
+    cursor: pointer;
+    scale: 1.7;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .aboutUs {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .aboutUsTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 75px;
+    margin-bottom: 15px;}
+  
+  .subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 7.5px;
+  }
+  
+  .subscribeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    min-height: 50px;
+    min-width: 120px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  
+  .unsubscribe {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7.5px;
+  }
+  
+  #noPurchases {
+    display: none;
+  }
+  
+  .aboutUsBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 1em;
+  }
+  
+  .aboutEgy {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    padding-right: 10px;
+  }
+  
+  .importantLinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .aboutUsTop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .subscribe { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .subscribe p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+    }
+  
+    .unsubscribe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  @media only screen and (max-width: 425px) {
+    #purchases {
+      display: none;
+    }
+  
+    #noPurchases {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .aboutUsBottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .aboutEgy {
+      max-width: 80%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .importantLinks {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+      }
+    
+      .contactWithUs{
+        margin-bottom: 25px;
+      }
+  }
+  
+  @media only screen and (min-width: 425px) {
+    .aboutUsBottom {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (min-width: 425px) {
+    .aboutEgy {
+      margin-bottom: 25px;
+    }
+  
+    .importantLinks {
+      margin-bottom: 25px;
+    }
+  
+    .contactWithUs{
+      margin-bottom: 25px;
+    }
+  }
+  
+  @media only screen and (min-width: 527px) {
+    .aboutEgy {
+      margin-right: 10px;
+    } 
+  
+    .importantLinks {
+      margin-right: 25px;
+    }
+  
+    .contactWithUs{
+      margin-right: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 385px) and (max-width: 485px){
+    .social-media-buttons a{
+      margin: 0 10px 0;
+    }
+  }
+  
+  @media only screen and (min-width: 485px) and (max-width: 535px){
+    .social-media-buttons a{
+      margin: 0 15px 0;
+    }
+  }
+  
+  @media only screen and (min-width: 535px) and (max-width: 555px){
+    .social-media-buttons a{
+      margin: 0;
+    }
+  }
